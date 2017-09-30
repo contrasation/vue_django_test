@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script src="{% static 'js/vue/dist/vue.js' %}"></script>
+    <!--<script src="https://unpkg.com/vue"></script>-->
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+    <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="{% static 'js/vue-material/dist/vue-material.css' %}">
+    <script src="{% static 'js/vue-material/dist/vue-material.js' %}"></script>
+</head>
+<body>
+
+    <div id="app">
+        <md-avatar class="md-large">
+            <img src="{% static 'js/vue-material/dist/docs/assets/avatar-2.jpg' %}" alt="People">
+        </md-avatar>
+
+        <md-avatar class="md-avatar-icon md-large">
+             <md-icon>home</md-icon>
+        </md-avatar>
+
+        <md-avatar class="md-avatar-icon md-large md-primary">
+            <md-icon>folder</md-icon>
+        </md-avatar>
+
+        <md-avatar class="md-avatar-icon md-large md-accent">
+            <md-icon>favorite</md-icon>
+        </md-avatar>
+
+        <md-avatar class="md-avatar-icon md-large md-warn">
+            <md-icon>notes</md-icon>
+        </md-avatar>
+    </div>
+
+    <div id="app-2">
+        <md-bottom-bar>
+            <md-bottom-bar-item md-icon="history">Recents</md-bottom-bar-item>
+            <md-bottom-bar-item md-icon="favorite" md-active>Favorites</md-bottom-bar-item>
+            <md-bottom-bar-item md-icon="near_me">Nearby</md-bottom-bar-item>
+        </md-bottom-bar>
+    </div>
+
+    <div id="app-3">
+        <md-button class="md-raised md-primary" v-on:click="showAlert()">Button</md-button>
+    </div>
+
+    <div id="app-4">
+        <md-input-container>
+        <label>Adress</label>
+        <md-textarea v-model="user.address"></md-textarea>
+        </md-input-container>
+
+        <p>{% verbatim %}{{ user.address }}{% endverbatim %}</p>
+    </div>
+
+</body>
+    <script src="{% static 'bbs/index.js' %}"></script>
+</html>
