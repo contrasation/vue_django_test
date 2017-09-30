@@ -1,0 +1,3 @@
+To render vue parameters, something like escape sequence for vue parameter shoud be put.
+https://github.com/contrasation/vue_django_test.git
+https://docs.djangoproject.com/en/1.11/ref/templates/builtins/#verbatim
