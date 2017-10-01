@@ -2,33 +2,20 @@ Vue.use(VueMaterial)
 
 var App = new Vue({
   el: '#app',
+  methods: {
+    showAlert: function() {
+        alert('Hello')
+    }
+  },
   data: {
       user : {
           address : 'This sentences would be\nsynchronize with below'
-        }
+        },
+      tableList: [
+        [1, 2, 3, 4],
+        [10, 20, 30, 40],
+        [15, 25, 35, 45],
+        [20, 25, 30, 35],
+      ]
     }
 });
-//
-//var App2 = new Vue({
-//  el: '#app-2'
-//});
-//
-//var App3 = new Vue({
-//  el: '#app-3',
-//  methods: {
-//    showAlert: function(){
-//        alert('Hello')
-//    }
-//  }
-//});
-//
-//var App4 = new Vue({
-//  el: '#app-4',
-//  data: {
-////    message: 'Hello Vue.js!!'
-//    user : {
-//      address : 'This sentences would be\nsynchronize with below'
-//    }
-//  }
-//});
-//
