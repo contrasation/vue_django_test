@@ -2,6 +2,10 @@ This is for study of how the django and vue application are implemented.
 
 test URL: http://127.0.0.1:8000/bbs/index/
 
+
+Yarn (CSS package manager)
+https://qiita.com/tonkotsuboy_com/items/0242928ab32794d11f76
+
 2017.09.30
 To render vue parameters, something like escape sequence for vue parameter shoud be put.
 https://github.com/contrasation/vue_django_test.git
